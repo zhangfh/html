@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript">
+		
+		 $.getJSON('http://fir.im/api/v2/app/version/544d9abde04ca11d1e000d19?token=YJwnk6nlur5MA5yg9VCZGikltos0K48kdqpdqa6b',function(data)
+		 {
+
+		 	    $('#versionid').append('<p>' + "Version:<u>" + data.version + '</u></p>');
+		 	    $('#versionid').append('<p>' + "ChangeLog:" + data.changelog + '</p>');
+		 	    $('#versionid').append('<a href="http://fir.im/largem">App update</a>');
+		 	    
+		 	    
+		 }
+		 );
+	</script>
+</head>
+<body style="background-color:rgba(33,33,33,1);color: rgb(226,177,29);">
+	<div class = "main">
+	<h2>LARGEM Application Version</h2>
+  <div id = "versionid">
+  	
+	</div>	 
+	   
+	<h2>iOS LARGEM  Help</h2>
+
+	<h3>LARGEM Watch Helper</h3>
+
+	<p>By default, This Application will connect your LARGEM watch by BLE.
+     The default function includes Sync your iphone&#39;s message to your watch, don&#39;t miss any import information for you.</p>
+
+  <h3>Sync Weather for LARGEM</h3>
+
+   <p>Set City in LARGEM Watch and fetch it by your iphone, you can know the weather information any time.</p>
+
+   <p>This feature can be configured by going to weather setting.</p>
+
+
+   <h3>Distance Measurements</h3>
+
+   <p>The LARGEM Watch can measurement your walk distance, caculate calories consumed , sync data to this App.</p>
+
+
+    <h3>Altimeter </h3>
+
+		<p>LARGEM Watch can get your current altimeter , only enable location in your iphone. </p>
+
+    <h3>Camera </h3>
+
+
+     <p>use LARGEM, you can control your camera  by it, heterodyne is not a dream.  </p>
+		</div>
+</body>
+</html>
